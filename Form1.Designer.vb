@@ -25,14 +25,17 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.btNovo = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.txtNome = New System.Windows.Forms.TextBox()
+        Me.txtNumero = New System.Windows.Forms.TextBox()
+        Me.btnNovo = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnExcluir = New System.Windows.Forms.Button()
+        Me.btnExibir = New System.Windows.Forms.Button()
+        Me.btnConsultar = New System.Windows.Forms.Button()
+        Me.dgvDados = New System.Windows.Forms.DataGridView()
+        Me.btnLimpar = New System.Windows.Forms.Button()
+        CType(Me.dgvDados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -62,90 +65,110 @@ Partial Class Form1
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Número:"
         '
-        'TextBox1
+        'txtID
         '
-        Me.TextBox1.Location = New System.Drawing.Point(78, 19)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(120, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.txtID.Location = New System.Drawing.Point(78, 19)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(120, 20)
+        Me.txtID.TabIndex = 3
         '
-        'TextBox2
+        'txtNome
         '
-        Me.TextBox2.Location = New System.Drawing.Point(78, 47)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(120, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txtNome.Location = New System.Drawing.Point(78, 47)
+        Me.txtNome.Name = "txtNome"
+        Me.txtNome.Size = New System.Drawing.Size(120, 20)
+        Me.txtNome.TabIndex = 4
         '
-        'TextBox3
+        'txtNumero
         '
-        Me.TextBox3.Location = New System.Drawing.Point(78, 75)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(120, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.txtNumero.Location = New System.Drawing.Point(78, 75)
+        Me.txtNumero.Name = "txtNumero"
+        Me.txtNumero.Size = New System.Drawing.Size(120, 20)
+        Me.txtNumero.TabIndex = 5
         '
-        'btNovo
+        'btnNovo
         '
-        Me.btNovo.Location = New System.Drawing.Point(78, 101)
-        Me.btNovo.Name = "btNovo"
-        Me.btNovo.Size = New System.Drawing.Size(75, 23)
-        Me.btNovo.TabIndex = 6
-        Me.btNovo.Text = "Novo"
-        Me.btNovo.UseVisualStyleBackColor = True
+        Me.btnNovo.Location = New System.Drawing.Point(78, 101)
+        Me.btnNovo.Name = "btnNovo"
+        Me.btnNovo.Size = New System.Drawing.Size(75, 23)
+        Me.btnNovo.TabIndex = 6
+        Me.btnNovo.Text = "Novo"
+        Me.btnNovo.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnEditar
         '
-        Me.Button1.Location = New System.Drawing.Point(159, 101)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Editar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnEditar.Location = New System.Drawing.Point(159, 101)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(75, 23)
+        Me.btnEditar.TabIndex = 7
+        Me.btnEditar.Text = "Editar"
+        Me.btnEditar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnExcluir
         '
-        Me.Button2.Location = New System.Drawing.Point(240, 101)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Excluir"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnExcluir.Location = New System.Drawing.Point(240, 101)
+        Me.btnExcluir.Name = "btnExcluir"
+        Me.btnExcluir.Size = New System.Drawing.Size(75, 23)
+        Me.btnExcluir.TabIndex = 8
+        Me.btnExcluir.Text = "Excluir"
+        Me.btnExcluir.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnExibir
         '
-        Me.Button3.Location = New System.Drawing.Point(402, 101)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "Exibir"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnExibir.Location = New System.Drawing.Point(402, 101)
+        Me.btnExibir.Name = "btnExibir"
+        Me.btnExibir.Size = New System.Drawing.Size(75, 23)
+        Me.btnExibir.TabIndex = 10
+        Me.btnExibir.Text = "Exibir"
+        Me.btnExibir.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnConsultar
         '
-        Me.Button4.Location = New System.Drawing.Point(321, 101)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "Consultar"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnConsultar.Location = New System.Drawing.Point(321, 101)
+        Me.btnConsultar.Name = "btnConsultar"
+        Me.btnConsultar.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsultar.TabIndex = 9
+        Me.btnConsultar.Text = "Consultar"
+        Me.btnConsultar.UseVisualStyleBackColor = True
+        '
+        'dgvDados
+        '
+        Me.dgvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDados.Location = New System.Drawing.Point(78, 131)
+        Me.dgvDados.Name = "dgvDados"
+        Me.dgvDados.Size = New System.Drawing.Size(399, 208)
+        Me.dgvDados.TabIndex = 11
+        '
+        'btnLimpar
+        '
+        Me.btnLimpar.Location = New System.Drawing.Point(218, 38)
+        Me.btnLimpar.Name = "btnLimpar"
+        Me.btnLimpar.Size = New System.Drawing.Size(75, 36)
+        Me.btnLimpar.TabIndex = 12
+        Me.btnLimpar.Text = "Limpar campos"
+        Me.btnLimpar.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(604, 450)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.btNovo)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.btnLimpar)
+        Me.Controls.Add(Me.dgvDados)
+        Me.Controls.Add(Me.btnExibir)
+        Me.Controls.Add(Me.btnConsultar)
+        Me.Controls.Add(Me.btnExcluir)
+        Me.Controls.Add(Me.btnEditar)
+        Me.Controls.Add(Me.btnNovo)
+        Me.Controls.Add(Me.txtNumero)
+        Me.Controls.Add(Me.txtNome)
+        Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.dgvDados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -154,12 +177,14 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents btNovo As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents txtNome As TextBox
+    Friend WithEvents txtNumero As TextBox
+    Friend WithEvents btnNovo As Button
+    Friend WithEvents btnEditar As Button
+    Friend WithEvents btnExcluir As Button
+    Friend WithEvents btnExibir As Button
+    Friend WithEvents btnConsultar As Button
+    Friend WithEvents dgvDados As DataGridView
+    Friend WithEvents btnLimpar As Button
 End Class
