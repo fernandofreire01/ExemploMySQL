@@ -1,0 +1,11 @@
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\bin\Debug\ExemploImagemMySQL.exe.config
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\bin\Debug\ExemploImagemMySQL.exe
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\bin\Debug\ExemploImagemMySQL.pdb
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\bin\Debug\ExemploImagemMySQL.xml
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\ExemploImagemMySQL.vbprojAssemblyReference.cache
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\ExemploImagemMySQL.Resources.resources
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\ExemploImagemMySQL.vbproj.GenerateResource.cache
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\ExemploImagemMySQL.vbproj.CoreCompileInputs.cache
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\ExemploImagemMySQL.exe
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\ExemploImagemMySQL.xml
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\ExemploImagemMySQL.pdb
