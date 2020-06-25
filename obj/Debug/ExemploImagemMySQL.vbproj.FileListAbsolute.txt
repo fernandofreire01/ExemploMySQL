@@ -26,3 +26,4 @@ C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\bin\Debug\System.
 C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\bin\Debug\MySql.Data.xml
 C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\ExemploImagemMySQL.exe.config
 C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\ExemploImagemMySQL.vbproj.CopyComplete
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\ExemploImagemMySQL.Form2.resources

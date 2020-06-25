@@ -11,6 +11,7 @@ Public Class Form1
             ofd1.Filter = "Imagens | *.jpg"
             If ofd1.ShowDialog() = DialogResult.OK Then
                 nomeArquivoImagem = ofd1.FileName
+                picFoto.BackColor = Color.Transparent 'Adicionei esse tratamento, para o fundo do local que será exibido a imagem
                 picFoto.Image = Image.FromFile(ofd1.FileName)
             End If
         Catch ex As Exception
@@ -47,7 +48,7 @@ Public Class Form1
                 cmd.Parameters.Add("@Imagem", MySqlDbType.Blob)
 
                 cmd.Parameters("@Nome").Value = txtNome.Text
-                cmd.Parameters("@Email").Value = txtNome.Text
+                cmd.Parameters("@Email").Value = txtEmail.Text
                 cmd.Parameters("@Imagem").Value = DadosImagem
 
                 con.Open()
@@ -70,5 +71,9 @@ Public Class Form1
 
     Private Sub btnEncerrar_Click(sender As Object, e As EventArgs) Handles btnEncerrar.Click
         Form1.ActiveForm.Close()
+    End Sub
+
+    Private Sub btnVerImagens_Click(sender As Object, e As EventArgs) Handles btnVerImagens.Click
+        My.Forms.Form2.Show()
     End Sub
 End Class

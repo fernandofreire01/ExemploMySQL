@@ -31,6 +31,7 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnSalvar = New System.Windows.Forms.Button()
         Me.btnEncerrar = New System.Windows.Forms.Button()
+        Me.btnVerImagens = New System.Windows.Forms.Button()
         CType(Me.picFoto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,6 +62,7 @@ Partial Class Form1
         '
         'picFoto
         '
+        Me.picFoto.BackColor = System.Drawing.Color.LightGray
         Me.picFoto.Location = New System.Drawing.Point(32, 99)
         Me.picFoto.Name = "picFoto"
         Me.picFoto.Size = New System.Drawing.Size(200, 200)
@@ -111,11 +113,21 @@ Partial Class Form1
         Me.btnEncerrar.Text = "Encerrar"
         Me.btnEncerrar.UseVisualStyleBackColor = True
         '
+        'btnVerImagens
+        '
+        Me.btnVerImagens.Location = New System.Drawing.Point(238, 276)
+        Me.btnVerImagens.Name = "btnVerImagens"
+        Me.btnVerImagens.Size = New System.Drawing.Size(79, 23)
+        Me.btnVerImagens.TabIndex = 10
+        Me.btnVerImagens.Text = "Ver Imagens"
+        Me.btnVerImagens.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(364, 413)
+        Me.Controls.Add(Me.btnVerImagens)
         Me.Controls.Add(Me.btnEncerrar)
         Me.Controls.Add(Me.btnSalvar)
         Me.Controls.Add(Me.txtNome)
@@ -125,8 +137,9 @@ Partial Class Form1
         Me.Controls.Add(Me.lblFoto)
         Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.lblEmail)
+        Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Salvando Imagens no MySQL"
         CType(Me.picFoto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -142,4 +155,5 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents btnSalvar As Button
     Friend WithEvents btnEncerrar As Button
+    Friend WithEvents btnVerImagens As Button
 End Class
