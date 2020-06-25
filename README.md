@@ -4,6 +4,7 @@ Projeto exemplo de VB .net com banco MySQL.
 Exemplos
 Master (Exemplo 1):
 > Link: https://www.youtube.com/watch?v=uukatMCSbzQ&list=WL&index=2&t=257s
+
 > String de conexão com MySQL
 https://www.connectionstrings.com/mysql/
 
