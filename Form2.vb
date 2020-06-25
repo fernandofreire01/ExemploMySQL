@@ -4,11 +4,13 @@ Imports System.Threading
 
 Public Class Form2
     Private Sub btnLerImagens_Click(sender As Object, e As EventArgs) Handles btnLerImagens.Click
+        'Chamando método para buscar imagem no db
         GetImagens()
     End Sub
 
     Private Sub GetImagens()
         'Throw New NotImplementedException()
+        'String para acesso ao banco de dados MySQL
         Dim _conexaoMySQL As String = "server=localhost;user id=root;password=123123;database=escola"
 
         Dim con As MySqlConnection = New MySqlConnection(_conexaoMySQL)
