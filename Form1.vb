@@ -14,7 +14,7 @@ Public Class Form1
             ofd1.Filter = "*.jpg|*.jpg|*.png |*.png" 'Comando ajustado para abrir dois tipos imagens
             If ofd1.ShowDialog() = DialogResult.OK Then
                 nomeArquivoImagem = ofd1.FileName
-                picFoto.BackColor = Color.Transparent 'Adicionei esse tratamento, para o fundo do local que será exibido a imagem
+                picFoto.BackColor = Color.Transparent 'Adicionei esse tratamento para o fundo do local que será exibido a imagem
                 picFoto.Image = Image.FromFile(ofd1.FileName)
             End If
         Catch ex As Exception
