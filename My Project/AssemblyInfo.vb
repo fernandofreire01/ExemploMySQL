@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Revise os valores dos atributos do assembly
 
-<Assembly: AssemblyTitle("ExemploImagemMySQL")>
+<Assembly: AssemblyTitle("graficoVB")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("ExemploImagemMySQL")>
+<Assembly: AssemblyProduct("graficoVB")>
 <Assembly: AssemblyCopyright("Copyright ©  2020")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'O GUID a seguir será destinado à ID de typelib se este projeto for exposto para COM
-<Assembly: Guid("628bf750-73bd-4bd4-a00a-ad7a9219110f")>
+<Assembly: Guid("221579fb-c489-481e-a066-4771a37c7a5b")>
 
 ' As informações da versão de um assembly consistem nos quatro valores a seguir:
 '
