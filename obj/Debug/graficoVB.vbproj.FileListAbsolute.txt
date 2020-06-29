@@ -10,3 +10,4 @@ C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\grafico
 C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\graficoVB.exe
 C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\graficoVB.xml
 C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\graficoVB.pdb
+C:\Users\fernandofreire\Documents\Projetos_GitHub\ExemploMySQL\obj\Debug\graficoVB.Form2.resources
